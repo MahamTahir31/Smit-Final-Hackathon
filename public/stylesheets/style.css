@@ -1,0 +1,74 @@
+.story::-webkit-scrollbar {
+  display: none;
+}
+
+a:focus {
+  outline: none !important;
+}
+
+body {
+  background: linear-gradient(250deg, #fffbff, #0c143f);
+  /* Replace with your preferred gradient colors */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  /* Specify your preferred font-family */
+  height: 100vh;
+  /* Ensure the gradient covers the entire viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#regbtn {
+  background-color: rgb(13, 13, 59);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: transform 0.2s;
+}
+
+#regbtn:hover {
+  cursor: pointer;
+  transform: translateY(5px); /* Move 5 pixels to the right */
+}
+#loginbtn {
+  color: #0c143f;
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+#askmess {
+  font-weight: 800;
+  color: black;
+}
+
+.inputBG {
+  background-color: rgb(198, 198, 205);
+  color: #0c143f;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to the .Logo class */
+.Reg {
+  color: #0c143f;
+  top: 80px;
+  right: 535px;
+  position: absolute;
+  display: inline;
+  font-size: 3rem;
+  /* Apply the animation classes from Tailwind */
+  animation: fadeIn 1s ease-in;
+}
