@@ -23,7 +23,5 @@ const userProjects = mongoose.Schema({
 userSchema.plugin(plm);
 userProjects.plugin(plm);
 
-module.exports = {
-  UserModel: mongoose.model("user", userSchema),
-  ProjectModel: mongoose.model("project", userProjects)
-};
+module.exports = mongoose.model("user", userSchema);
+module.exports = mongoose.model("project", userProjects);
