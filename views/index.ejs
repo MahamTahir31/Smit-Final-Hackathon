@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="../stylesheets/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.6.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../stylesheets/index.css">
+    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
+    <title>My Site</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
 </head>
 <body>
-    <div class="">
-      <!-- Applying Tailwind CSS classes to style the logo -->
-      <h1 class="Reg">Register Here</h1>
-  </div>
-    <div class="w-full min-h-screen text-white py-6 flex flex-col items-center justify-center">
-      <div class="flex flex-col items-center gap-6 px-4">
-        <form class="w-full" action="/register" method="post">
-          <input class="px-3 mt-2 py-2 border-2 border-zinc-800 rounded-md block w-full inputBG" type="text" placeholder="username" name="username">
-          <input class="px-3 mt-2 py-2 border-2 border-zinc-800 rounded-md block w-full inputBG" type="email" placeholder="email" name="email">
-          <input class="px-3 mt-2 py-2 border-2 border-zinc-800 rounded-md block w-full inputBG " type="text" placeholder="name" name="name">
-          <input class="px-3 mt-2 py-2 border-2 border-zinc-800 rounded-md block w-full inputBG" type="password" placeholder="password" name="password">
-          <input class="w-full  px-3 py-3 rounded-md mt-2" type="submit" value="Create Account" id="regbtn">
-        </form>
-        <span id="askmess">Already have an account ? <a href="/login" id="loginbtn">Log In</a></span>
+  <nav class="navbar navbar-light" id="index-nav">
+      <div class="container-fluid">
+          <a class="navbar-brand"><img src="../images/logo.png" alt="Pay Easily!"></a>
+          <form class="d-flex" action="/login" method="post">
+              <input class="btn btn-style" type="submit" value="Log In" id="logbtn">
+          </form>
       </div>
-    </div>
+  </nav>
+  <div class="container">
+      <div class="sticker">
+        <img src="../images/mainsticker.png" class="inline-photo show-on-scroll" alt="INFERNO">
+      </div>
+      <h1 align="center">PERSON-TO-MERCHANT PAYMENT SYSTEM</h1>
+  </div>
+</body>
+<script src="../javascripts/index.js"></script>
+    
 
-  </body>
 </html>

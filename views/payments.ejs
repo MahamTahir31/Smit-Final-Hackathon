@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../stylesheets/payments.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Payments | Merchant Portal</title>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <div class="header-buttons">
+        <button class="header-button"><i class="fas fa-search"></i></button>
+        <button class="header-button"><i class="fas fa-question-circle"></i></button>
+        <button class="header-button"><i class="fas fa-bell"></i></button>
+        <button class="header-button"><i class="fas fa-plus"></i> Create</button>
+        <div class="profile-dropdown">
+            <span class="profile-name">Merchant</span>
+          <!-- Add dropdown content here -->
+          <div class="dropdown">
+            <button class="dropbtn">▼</button>
+            <div class="dropdown-content">
+                <form class="d-flex" action="/logout" method="post">
+                  <a href="/">Logout</a>
+                </form>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Bar and Content Section -->
+  <div class="main-container">
+    <div class="slide">
+      <h1>Merchant Portal</h1>
+      <ul>
+        <li><a href="/merchant" class="nav-item" data-page="dashboard"><i class="fa-solid fa-book"></i> Dashboard</a></li>
+        <li><a href="#" class="nav-item btn btn-primary" data-page="payments" id="openPage"><i class="fas fa-dollar-sign"></i> Payments</a></li>
+        <li><a href="/customers" class="nav-item" data-page="customers"><i class="fa-solid fa-children"></i> Customers</a></li>
+        <li><a href="/paymentRequest" class="nav-item" data-page="payment-request"><i class="fas fa-dollar-sign"></i> Payment Request</a></li>
+      </ul>
+    </div>
+
+    <div class="content-container">
+      <!-- Your content goes here -->
+      <h2>Payments</h2>
+
+      <div class="container">
+        <div class="row my-4">
+            <div class="col-lg-12">
+                <div class="table-responsive">
+                    <table class="table table-striped text-center my-5" style="border-collapse: collapse; width: 100%; border: 2px solid black;">
+                        <thead>
+                            <tr class="table-dark" style="background-color: #343a40; color: white;">
+                                <th style="border: 1px solid black; padding: 8px;">ID</th>
+                                <th style="border: 1px solid black; padding: 8px;">IMAGE</th>
+                                <th style="border: 1px solid black; padding: 8px;">CUSTOMER</th>
+                                <th style="border: 1px solid black; padding: 8px;">EMAIL</th>
+                                <th style="border: 1px solid black; padding: 8px;">PHONE</th>
+                                <th style="border: 1px solid black; padding: 8px;">PAY METHOD</th>
+                                <th style="border: 1px solid black; padding: 8px;">AMOUNT PAID</th>
+                                <th style="border: 1px solid black; padding: 8px;">CREATED DATE</th>
+                          
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Sample data for demonstration -->
+                            <tr class="align-middle">
+                                <td style="border: 1px solid black; padding: 8px;">1</td>
+                                <td style="border: 1px solid black; padding: 8px;"><img src="../images/dp1.png" width="50" class="img-thumbnail"></td>
+                                <td style="border: 1px solid black; padding: 8px;">Maham</td>
+                                <td style="border: 1px solid black; padding: 8px;">maham@example.com</td>
+                                <td style="border: 1px solid black; padding: 8px;">1234567890</td>
+                                <td style="border: 1px solid black; padding: 8px;">Card</td>
+                                <td style="border: 1px solid black; padding: 8px;">2000</td>
+                                <td style="border: 1px solid black; padding: 8px;">2024-03-07</td>
+                                
+                            </tr>
+                            <tr class="align-middle">
+                                <td style="border: 1px solid black; padding: 8px;">2</td>
+                                <td style="border: 1px solid black; padding: 8px;"><img src="../images/dp2.png" width="50" class="img-thumbnail"></td>
+                                <td style="border: 1px solid black; padding: 8px;">Areeba</td>
+                                <td style="border: 1px solid black; padding: 8px;">areeba@example.com</td>
+                                <td style="border: 1px solid black; padding: 8px;">7493749652</td>
+                                <td style="border: 1px solid black; padding: 8px;">Cash</td>
+                                <td style="border: 1px solid black; padding: 8px;">5000</td>
+                                <td style="border: 1px solid black; padding: 8px;">2024-03-07</td>
+                              
+                            </tr>
+                              <tr class="align-middle">
+                                  <td style="border: 1px solid black; padding: 8px;">3</td>
+                                  <td style="border: 1px solid black; padding: 8px;"><img src="../images/dp3.png" width="50" class="img-thumbnail"></td>
+                                  <td style="border: 1px solid black; padding: 8px;">Faiqa</td>
+                                  <td style="border: 1px solid black; padding: 8px;">faiqa@example.com</td>
+                                  <td style="border: 1px solid black; padding: 8px;">1534597898</td>
+                                  <td style="border: 1px solid black; padding: 8px;">Cash</td>
+                                  <td style="border: 1px solid black; padding: 8px;">5000</td>
+                                  <td style="border: 1px solid black; padding: 8px;">2024-03-07</td>
+                               
+                              </tr>
+                              <tr class="align-middle">
+                                  <td style="border: 1px solid black; padding: 8px;">4</td>
+                                  <td style="border: 1px solid black; padding: 8px;"><img src="../images/dp4.png" width="50" class="img-thumbnail"></td>
+                                  <td style="border: 1px solid black; padding: 8px;">Aina</td>
+                                  <td style="border: 1px solid black; padding: 8px;">aina@example.com</td>
+                                  <td style="border: 1px solid black; padding: 8px;">6237567490</td>
+                                  <td style="border: 1px solid black; padding: 8px;">Card</td>
+                                  <td style="border: 1px solid black; padding: 8px;">9000</td>
+                                  <td style="border: 1px solid black; padding: 8px;">2024-03-07</td>
+                                
+                              </tr>
+                            <!-- Additional rows can be added similarly -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

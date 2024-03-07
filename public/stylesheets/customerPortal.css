@@ -1,0 +1,60 @@
+#customer-body{
+    background: linear-gradient(250deg, #fffbff, #000000);
+    height: 100vh;
+}
+
+#customerNav {
+    background-color: black;
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+
+.navbar-customer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.nav-feature {
+    color: beige;
+    display: block;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* Adjust as needed */
+    text-decoration: none;
+
+}
+.nav-feature:hover{
+    color: grey;
+}
+.list-item {
+    display: inline-block;
+    margin-right: 10px;
+    /* Adjust as needed */
+}
+
+.list-item:last-child {
+    margin-right: 0;
+    /* Remove margin from the last item */
+}
+
+.heading{
+    color: black;
+    margin-top: 50px;
+    margin-bottom: -20px;
+}
+#nav-ul{
+    margin-left: 360px;
+}
+.Account-name{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+#white-toggler .navbar-toggler-icon {
+    color: white;
+}

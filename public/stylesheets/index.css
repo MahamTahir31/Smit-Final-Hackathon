@@ -1,0 +1,60 @@
+body {
+    /* background-image: url('../images/bg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  */
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.container {
+    display: inline-block;
+    height: 80vh;
+    border: 2px solid black;
+    /* Adding border to the container */
+    padding: 20px;
+    /* Adding padding to create space for the h1 inside */
+}
+
+h1 {
+    color: white;
+    /* Border for the h1 */
+    display: inline-block;
+    /* Ensuring the h1 doesn't occupy full width */
+    padding: 10px;
+    /* Adding padding for better appearance */
+    width: 40%;
+    position: absolute;
+    top: 270px;
+    right: 90px;
+}
+
+.sticker {
+    position: absolute;
+    left: 150px;
+    top: 55%;
+    /* Adjust this value as needed */
+    transform: translateY(-50%);
+}
+
+.sticker img {
+    width: 350px;
+    /* Adjust the width of the sticker image */
+    height: 350px;
+    /* Maintains aspect ratio */
+}
+
+#index-nav {
+    background-color: rgb(113, 113, 113);
+}
+
+.btn-style {
+    font-weight: 700;
+    border: 2px solid black;
+}
+
+.btn-style:hover {
+    background-color: rgb(171, 167, 167);
+}
